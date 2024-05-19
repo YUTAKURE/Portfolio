@@ -46,7 +46,7 @@ const Header = () => {
     <div className="px-8 py-10 flex items-center justify-between">
       <Link
         href="/"
-        className="font-medium ml-4 text-2xl md:text-3xl lg:text-4xl"
+        className="font-medium ml-4 text-lg md:text-2xl lg:text-4xl"
       >
         YK Portfolio
       </Link>
