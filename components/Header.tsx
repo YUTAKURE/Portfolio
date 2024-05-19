@@ -58,14 +58,14 @@ const Header = () => {
         <Link href="/about">Scroll-area</Link>
       </nav>
 
-      <div className="flex items-center gap-6 md:hidden">
+      <div className="flex items-center md:hidden md:gap-6">
         <div>
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Menu</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid w-[150px] gap-3 p-4">
+                  <ul className="grid w-[130px] gap-3 p-4">
                     {components.map((component) => (
                       <ListItem
                         key={component.title}
