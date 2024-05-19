@@ -50,7 +50,15 @@ const Header = () => {
       >
         YK Portfolio
       </Link>
-      <div className="flex items-center gap-6">
+
+      <nav className="hidden md:flex gap-10 mr-5 justify-between items-center ">
+        <Link href="/about">ABOUT</Link>
+        <Link href="/about">WORKS</Link>
+        <Link href="/about">CONTACT</Link>
+        <Link href="/about">Scroll-area</Link>
+      </nav>
+
+      <div className="flex items-center gap-6 md:hidden">
         <div>
           <NavigationMenu>
             <NavigationMenuList>
