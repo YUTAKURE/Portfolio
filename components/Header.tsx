@@ -13,7 +13,6 @@ import {
 import Link from 'next/link';
 import { useTheme } from 'next-themes';
 import ThemeSwitch from '@/components/ThemeSwitch';
-import { motion } from 'framer-motion';
 
 const components: { title: string; href: string }[] = [
   {
