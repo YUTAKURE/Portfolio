@@ -25,11 +25,11 @@ const components: { title: string; href: string }[] = [
   },
   {
     title: 'WORKS',
-    href: '/',
+    href: '#works',
   },
   {
     title: 'CONTACT',
-    href: '/',
+    href: '#contact',
   },
 ];
 
