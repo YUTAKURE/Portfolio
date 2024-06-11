@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
@@ -31,7 +31,34 @@ const FormSchema = z.object({
   }),
 });
 
+const Modal = ({
+  isOpen,
+  onClose,
+  children,
+}: {
+  isOpen: boolean;
+  onClose: () => void;
+  children: React.ReactNode;
+}) => {
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+      <div className=" bg-slate-200 px-24 p-16 rounded-md relative">
+        <button
+          className="absolute -top-9 -right-9 text-xl border-2 rounded-full px-2 py-1"
+          onClick={onClose}
+        >
+          &times;
+        </button>
+        {children}
+      </div>
+    </div>
+  );
+};
+
 const Contact = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
@@ -52,9 +79,8 @@ const Contact = () => {
       email: data.emailAddress,
     };
 
-    data.username = '';
-    data.text = '';
-    data.emailAddress = '';
+    form.reset();
+    setIsModalOpen(true);
 
     console.log(result);
 
@@ -164,6 +190,10 @@ const Contact = () => {
           </form>
         </Form>
       </motion.div>
+
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+        <p className="text-xl dark:text-slate-800">Thank you!</p>
+      </Modal>
     </div>
   );
 };

@@ -3,11 +3,12 @@ import React from 'react';
 interface VideoPlayerProps {
   src: string;
   type: string;
+  key: string;
 }
 
-const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, type }) => {
+const VideoPlayer: React.FC<VideoPlayerProps> = ({ src, type, key }) => {
   return (
-    <div>
+    <div key={key}>
       <video
         width="640"
         height="360"
