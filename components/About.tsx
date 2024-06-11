@@ -39,20 +39,6 @@ const About = () => {
           <h3>Logic factory Co.,Ltd. / Network Engineer</h3>
           <p className="mb-5">in Tokyo, Japan | 02/2012 - 02/2014</p>
         </div>
-
-        <div className="flex gap-3 md:gap-5 text-2xl md:text-5xl justify-center">
-          <FaXTwitter className=" hover:scale-110 transition duration-300" />
-          <FaInstagram className=" hover:scale-110 transition duration-300" />
-          <Link href="https://github.com/YUTAKURE" target="_blank">
-            <FaGithub className=" hover:scale-110 transition duration-300" />
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/yuta-kurebayashi-b440352b2/"
-            target="_blank"
-          >
-            <FaLinkedin className=" hover:scale-110 transition duration-300" />
-          </Link>
-        </div>
       </div>
     </div>
   );

@@ -36,7 +36,7 @@ const components: { title: string; href: string }[] = [
 const Header = () => {
   const { setTheme } = useTheme();
   return (
-    <div className="sticky top-0 px-8 py-5 bg-secondary-light dark:bg-primary-dark mb-8 flex items-center justify-between border-b">
+    <div className="sticky top-0 z-50 px-8 py-5 bg-secondary-light dark:bg-primary-dark mb-8 flex items-center justify-between border-b">
       <Link href="/" className="font-medium text-lg md:text-2xl lg:text-3xl">
         YK Portfolio
       </Link>

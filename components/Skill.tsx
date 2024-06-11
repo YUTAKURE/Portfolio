@@ -37,10 +37,10 @@ const Skill = () => {
 
         <div>
           <h3>Co., Ltd. IF BOX | Actor</h3>
-          <p className="mb-5">in Tokyo, Japan | 03/2014 - 12/2023</p>
+          <p className="mb-16">in Tokyo, Japan | 03/2014 - 12/2023</p>
         </div>
 
-        <div className=" flex gap-3 md:gap-5 text-2xl md:text-5xl mb-3 justify-center">
+        <div className="flex gap-3 md:gap-5 text-3xl md:text-5xl mb-3 justify-center">
           <SiHtml5 className=" hover:scale-110 transition duration-300" />
           <SiCss3 className=" hover:scale-110 transition duration-300" />
           <SiJavascript className=" hover:scale-110 transition duration-300" />
@@ -48,7 +48,7 @@ const Skill = () => {
           <SiReact className=" hover:scale-110 transition duration-300" />
           <SiNextdotjs className=" hover:scale-110 transition duration-300" />
         </div>
-        <div className=" flex gap-3 md:gap-5 text-2xl md:text-5xl justify-center">
+        <div className="flex gap-3 md:gap-5 text-3xl md:text-5xl justify-center">
           <SiTailwindcss className=" hover:scale-110 transition duration-300" />
           <SiBootstrap className=" hover:scale-110 transition duration-300" />
           <SiShadcnui className=" hover:scale-110 transition duration-300" />

@@ -9,6 +9,7 @@ import About from '@/components/About';
 import Skill from '@/components/Skill';
 import Works from '@/components/Works';
 import Contact from '@/components/Contact';
+import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa6';
 
 export default function Home() {
   return (
@@ -39,19 +40,27 @@ export default function Home() {
               vel quam quas suscipit, obcaecati illum voluptas est hic
               voluptatum dolore?
             </motion.p>
+
             <motion.span
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
             >
-              {/* <Button
-                variant="outline"
-                className="mb-5 duration-300 bg-gradient-to-br from-blue-400 via-pink-500 to-yellow-300 "
-              >
-                Contact
-              </Button> */}
+              <div className="md:flex gap-3 md:gap-5 md:text-5xl md:justify-start hidden">
+                <FaInstagram className=" hover:scale-110 transition duration-300" />
+                <Link href="https://github.com/YUTAKURE" target="_blank">
+                  <FaGithub className=" hover:scale-110 transition duration-300" />
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/in/yuta-kurebayashi-b440352b2/"
+                  target="_blank"
+                >
+                  <FaLinkedin className=" hover:scale-110 transition duration-300" />
+                </Link>
+              </div>
             </motion.span>
           </motion.div>
+
           <motion.div
             className="md:w-1/2 lg:max-w-lg w-3/4"
             initial={{ opacity: 0 }}
@@ -67,6 +76,25 @@ export default function Home() {
               placeholder="blur"
             />
           </motion.div>
+
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+          >
+            <div className="md:hidden gap-5 mt-6 text-3xl flex justify-center">
+              <FaInstagram className=" hover:scale-110 transition duration-300" />
+              <Link href="https://github.com/YUTAKURE" target="_blank">
+                <FaGithub className=" hover:scale-110 transition duration-300" />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/yuta-kurebayashi-b440352b2/"
+                target="_blank"
+              >
+                <FaLinkedin className=" hover:scale-110 transition duration-300" />
+              </Link>
+            </div>
+          </motion.span>
         </div>
       </section>
 

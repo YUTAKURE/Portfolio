@@ -1,5 +1,6 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
+import Slider from './Slider';
 
 const Works = () => {
   const DynamicVideoPlayer = dynamic(
@@ -13,6 +14,11 @@ const Works = () => {
         <h1 className="text-2xl md:text-3xl font-medium pb-3 mb-16 border-b border-gray-500">
           WORKS
         </h1>
+
+        <div className="mb-20 flex justify-center">
+          <Slider />
+        </div>
+
         <div className="md:flex md:justify-center md:gap-10">
           <div className="mb-10">
             <DynamicVideoPlayer
