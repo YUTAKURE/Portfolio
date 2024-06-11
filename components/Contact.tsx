@@ -42,8 +42,13 @@ const Modal = ({
 }) => {
   if (!isOpen) return null;
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-      <div className=" bg-slate-200 px-24 p-16 rounded-md relative">
+    <motion.div
+      className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.5 }}
+    >
+      <div className=" bg-slate-200 md:px-24 md:py-16 px-16 py-12 rounded-md relative">
         <button
           className="absolute -top-9 -right-9 text-xl border-2 rounded-full px-2 py-1"
           onClick={onClose}
@@ -52,7 +57,7 @@ const Modal = ({
         </button>
         {children}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
@@ -192,7 +197,7 @@ const Contact = () => {
       </motion.div>
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-        <p className="text-xl dark:text-slate-800">Thank you!</p>
+        <p className="md:text-xl text-lg dark:text-slate-800">Thank you!</p>
       </Modal>
     </div>
   );
