@@ -85,7 +85,7 @@ const Contact = () => {
         className="w-3/4 mx-auto text-start"
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ ease: 'easeOut', duration: 0.6, delay: 0.7 }}
+        transition={{ ease: 'easeOut', duration: 0.6, delay: 0.5 }}
       >
         <Form {...form}>
           <form
