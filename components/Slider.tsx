@@ -18,10 +18,12 @@ const Slider = () => {
 
   const images: { src: string; alt: string }[] = [
     { src: '/images/IMG_5304.JPG', alt: 'Image 1' },
-    { src: '/images/IMG_5307.JPG', alt: 'Image 2' },
+    { src: '/images/IMG_5300.JPG', alt: 'Image 2' },
     { src: '/images/20180902205216.png', alt: 'Image 3' },
-    { src: '/images/IMG_5316.JPG', alt: 'Image 4' },
-    { src: '/images/yuta.jpg', alt: 'Image 5' },
+    { src: '/images/IMG_5315.JPG', alt: 'Image 4' },
+    { src: '/images/IMG_5307.JPG', alt: 'Image 5' },
+    { src: '/images/IMG_5320.JPG', alt: 'Image 6' },
+    { src: '/images/IMG_5316.JPG', alt: 'Image 7' },
   ];
 
   return (
@@ -34,12 +36,12 @@ const Slider = () => {
       >
         <CarouselContent>
           {images.map((image, index) => (
-            <CarouselItem key={index} className="pl-1 md:basis-1/3">
-              <div className="p-1">
+            <CarouselItem key={index} className="pl-4 md:basis-1/3">
+              <div className="">
                 <Card>
                   <CardContent className="relative flex aspect-square items-center justify-center p-12">
                     <Image
-                      className="w-full"
+                      className="w-full rounded-md"
                       src={image.src}
                       alt={image.alt}
                       layout="fill"
