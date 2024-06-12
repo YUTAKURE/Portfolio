@@ -13,7 +13,7 @@ import {
 
 const Slider = () => {
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true }),
+    Autoplay({ delay: 3000, stopOnInteraction: true }),
   );
 
   const images: { src: string; alt: string }[] = [
@@ -25,20 +25,21 @@ const Slider = () => {
   ];
 
   return (
-    <div>
+    <div className="w-full">
       <Carousel
         plugins={[plugin.current]}
-        className="w-full max-w-xs"
+        className=""
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
       >
         <CarouselContent>
           {images.map((image, index) => (
-            <CarouselItem key={index}>
+            <CarouselItem key={index} className="pl-1 md:basis-1/3">
               <div className="p-1">
                 <Card>
-                  <CardContent className="relative flex aspect-square items-center justify-center p-6">
+                  <CardContent className="relative flex aspect-square items-center justify-center p-12">
                     <Image
+                      className="w-full"
                       src={image.src}
                       alt={image.alt}
                       layout="fill"
