@@ -12,6 +12,9 @@ import {
   SiSupabase,
   SiGit,
   SiGithub,
+  SiAdobepremierepro,
+  SiAdobephotoshop,
+  SiDavinciresolve,
 } from 'react-icons/si';
 
 const Skill = () => {
@@ -40,8 +43,8 @@ const Skill = () => {
           <p className="mb-16">in Tokyo, Japan | 03/2014 - 12/2023</p>
         </div>
 
-        <div className="flex gap-3 md:gap-5 text-3xl md:text-5xl mb-3 justify-center">
-          <SiHtml5 className=" hover:scale-110 transition duration-300" />
+        <div className=" flex gap-3 md:gap-5 text-3xl md:text-5xl mb-3 justify-center">
+          <SiHtml5 className=" hover:scale-110 duration-300" />
           <SiCss3 className=" hover:scale-110 transition duration-300" />
           <SiJavascript className=" hover:scale-110 transition duration-300" />
           <SiTypescript className=" hover:scale-110 transition duration-300" />
@@ -55,6 +58,12 @@ const Skill = () => {
           <SiSupabase className=" hover:scale-110 transition duration-300" />
           <SiGit className=" hover:scale-110 transition duration-300" />
           <SiGithub className=" hover:scale-110 transition duration-300" />
+        </div>
+
+        <div className="flex gap-3 md:gap-5 text-3xl md:text-5xl mt-14 justify-center">
+          <SiAdobepremierepro className=" hover:scale-110 transition duration-300" />
+          <SiAdobephotoshop className=" hover:scale-110 transition duration-300" />
+          <SiDavinciresolve className=" hover:scale-110 transition duration-300" />
         </div>
       </div>
     </div>

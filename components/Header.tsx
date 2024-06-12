@@ -56,13 +56,13 @@ const Header = () => {
             SKILL
           </Link>
           <Link
-            href="/"
+            href="#works"
             className="text-sm lg:text-lg hover:opacity-75 transition duration-300"
           >
             WORKS
           </Link>
           <Link
-            href="/"
+            href="#contact"
             className="text-sm lg:text-lg hover:opacity-75 transition duration-300"
           >
             CONTACT

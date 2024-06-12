@@ -187,7 +187,7 @@ const Contact = () => {
             <div className="flex justify-center">
               <Button
                 type="submit"
-                className="max-w-md w-2/3 space-y-6 hover:scale-95 transition duration-300"
+                className="max-w-md w-2/3 space-y-6 hover:scale-95 transition duration-300 mb-40"
               >
                 Submit
               </Button>
