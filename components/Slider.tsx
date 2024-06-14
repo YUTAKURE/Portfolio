@@ -22,8 +22,9 @@ const Slider = () => {
     { src: '/images/20180902205216.png', alt: 'Image 3' },
     { src: '/images/IMG_5315.JPG', alt: 'Image 4' },
     { src: '/images/IMG_5307.JPG', alt: 'Image 5' },
-    { src: '/images/IMG_5320.JPG', alt: 'Image 6' },
-    { src: '/images/IMG_5316.JPG', alt: 'Image 7' },
+    { src: '/images/IMG_6875.JPG', alt: 'Image 6' },
+    { src: '/images/IMG_5320.JPG', alt: 'Image 7' },
+    { src: '/images/IMG_5316.JPG', alt: 'Image 8' },
   ];
 
   return (
