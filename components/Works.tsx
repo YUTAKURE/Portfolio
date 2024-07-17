@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import dynamic from 'next/dynamic';
 import Slider from './Slider';
@@ -12,11 +14,13 @@ const Works = () => {
   return (
     <div className="w-3/4 px-15 py-24 mx-auto text-center">
       <div className="mb-20">
-        <h1 className="text-2xl md:text-3xl font-medium pb-3">WORKS</h1>
+        <h1 className="text-2xl md:text-3xl font-medium pb-3 mb-5 w-15 border-b border-gray-500">
+          WORKS
+        </h1>
 
-        <div className="">
+        {/* <div className="">
           <div className="mb-16 before:content-[''] before:block before:w-full before:h-[1.2px] before:bg-gradient-to-r before:from-transparent before:via-slate-400 dark:before:via-yellow-400 before:to-transparent"></div>
-        </div>
+        </div> */}
 
         <motion.div
           className="mb-20 flex justify-center"
