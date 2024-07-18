@@ -16,8 +16,38 @@ import {
   SiAdobephotoshop,
   SiDavinciresolve,
 } from 'react-icons/si';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 
 const Skill = () => {
+  const icons_1: { iconComp: React.FC; iconName: string }[] = [
+    { iconComp: SiHtml5, iconName: 'HTML' },
+    { iconComp: SiCss3, iconName: 'CSS' },
+    { iconComp: SiJavascript, iconName: 'JavaScript' },
+    { iconComp: SiTypescript, iconName: 'Typescript' },
+    { iconComp: SiReact, iconName: 'React' },
+    { iconComp: SiNextdotjs, iconName: 'Next.js' },
+  ];
+
+  const icons_2: { iconComp: React.FC; iconName: string }[] = [
+    { iconComp: SiTailwindcss, iconName: 'Tailwind CSS' },
+    { iconComp: SiBootstrap, iconName: 'Bootstrap' },
+    { iconComp: SiShadcnui, iconName: 'shadcn/ui' },
+    { iconComp: SiSupabase, iconName: 'Supabase' },
+    { iconComp: SiGit, iconName: 'Git' },
+    { iconComp: SiGithub, iconName: 'GitHub' },
+  ];
+
+  const icons_3: { iconComp: React.FC; iconName: string }[] = [
+    { iconComp: SiAdobepremierepro, iconName: 'Premiere Pro' },
+    { iconComp: SiAdobephotoshop, iconName: 'Photoshop' },
+    { iconComp: SiDavinciresolve, iconName: 'DaVinci Resolve' },
+  ];
+
   return (
     <div className="w-3/4 px-15 py-24 mx-auto text-center">
       <div className="mb-20">
@@ -30,40 +60,55 @@ const Skill = () => {
       </div>
 
       <div>
-        <div className="mt-10">
-          <h3>
-            <span className="text-xl mr-2">Greystone College</span>| Front End
-            Development with CO-OP
-          </h3>
-          <p className="mb-5">in Vancouver, Canada/ - Present</p>
+        <div className="flex gap-3 md:gap-5 text-3xl md:text-5xl mb-3 justify-center">
+          {icons_1.map((Icon_1, index) => (
+            <span key={index} className="hover:scale-110 duration-300">
+              <TooltipProvider delayDuration={200}>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Icon_1.iconComp />
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>{Icon_1.iconName}</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            </span>
+          ))}
         </div>
 
-        <div>
-          <h3>Co., Ltd. IF BOX | Actor</h3>
-          <p className="mb-16">in Tokyo, Japan | 03/2014 - 12/2023</p>
-        </div>
-
-        <div className=" flex gap-3 md:gap-5 text-3xl md:text-5xl mb-3 justify-center">
-          <SiHtml5 className=" hover:scale-110 duration-300" />
-          <SiCss3 className=" hover:scale-110 transition duration-300" />
-          <SiJavascript className=" hover:scale-110 transition duration-300" />
-          <SiTypescript className=" hover:scale-110 transition duration-300" />
-          <SiReact className=" hover:scale-110 transition duration-300" />
-          <SiNextdotjs className=" hover:scale-110 transition duration-300" />
-        </div>
         <div className="flex gap-3 md:gap-5 text-3xl md:text-5xl justify-center">
-          <SiTailwindcss className=" hover:scale-110 transition duration-300" />
-          <SiBootstrap className=" hover:scale-110 transition duration-300" />
-          <SiShadcnui className=" hover:scale-110 transition duration-300" />
-          <SiSupabase className=" hover:scale-110 transition duration-300" />
-          <SiGit className=" hover:scale-110 transition duration-300" />
-          <SiGithub className=" hover:scale-110 transition duration-300" />
+          {icons_2.map((Icon_2, index) => (
+            <span key={index} className="hover:scale-110 duration-300">
+              <TooltipProvider delayDuration={200}>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Icon_2.iconComp />
+                  </TooltipTrigger>
+                  <TooltipContent side="bottom">
+                    <p>{Icon_2.iconName}</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            </span>
+          ))}
         </div>
 
         <div className="flex gap-3 md:gap-5 text-3xl md:text-5xl mt-14 justify-center">
-          <SiAdobepremierepro className=" hover:scale-110 transition duration-300" />
-          <SiAdobephotoshop className=" hover:scale-110 transition duration-300" />
-          <SiDavinciresolve className=" hover:scale-110 transition duration-300" />
+          {icons_3.map((Icon_3, index) => (
+            <span key={index} className="hover:scale-110 duration-300">
+              <TooltipProvider delayDuration={200}>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Icon_3.iconComp />
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>{Icon_3.iconName}</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            </span>
+          ))}
         </div>
       </div>
     </div>

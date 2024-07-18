@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import img2 from '../public/images/yuta.jpg';
 import React, { useRef } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
 import { Card, CardContent } from '@/components/ui/card';
