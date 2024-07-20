@@ -10,7 +10,7 @@ const Darkmode = () => {
     <div
       onClick={() => setTheme(activeTheme)}
       aria-label="Theme Switcher"
-      className="ml-8  p-3 shadow-sm rounded-xl cursor-pointer"
+      className="ml-8 p-3 rounded-xl cursor-pointer"
     >
       {activeTheme === 'dark' ? (
         <FiMoon className=" hover:text-gray-400 text-xl duration-300" />
