@@ -104,7 +104,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="w-3/4 px-15 py-24 mx-auto text-center">
+    <div className="w-3/4 px-15 py-24 mx-auto text-center ">
       <div className="mb-20">
         <h1 className="text-2xl md:text-3xl font-medium pb-3 mb-5 w-15 border-b border-gray-500">
           CONTACT
@@ -132,7 +132,11 @@ const Contact = () => {
                     Your Name
                   </FormLabel> */}
                   <FormControl>
-                    <Input placeholder="Name" {...field} />
+                    <Input
+                      placeholder="Name"
+                      {...field}
+                      className="duration-500"
+                    />
                   </FormControl>
                   {/* <FormDescription>
                     This is your public display name.
@@ -151,7 +155,11 @@ const Contact = () => {
                     Your E-mail
                   </FormLabel> */}
                   <FormControl>
-                    <Input placeholder="E-mail" {...field} />
+                    <Input
+                      placeholder="E-mail"
+                      {...field}
+                      className="duration-500 "
+                    />
                   </FormControl>
                   {/* <FormDescription>
                     This is your public display name.
@@ -172,8 +180,8 @@ const Contact = () => {
                   <FormControl>
                     <Textarea
                       placeholder="Text"
-                      className="resize-none"
                       {...field}
+                      className="resize-none duration-500"
                     />
                   </FormControl>
                   {/* <FormDescription>
@@ -187,7 +195,7 @@ const Contact = () => {
             <div className="flex justify-center">
               <Button
                 type="submit"
-                className="max-w-md w-2/3 space-y-6 hover:scale-95 transition duration-300 mb-40"
+                className="max-w-md w-2/3 space-y-6 hover:scale-95 transition-transform duration-300 mb-40"
               >
                 Submit
               </Button>
