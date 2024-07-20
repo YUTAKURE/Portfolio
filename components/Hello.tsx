@@ -27,7 +27,7 @@ const Hello = () => {
           className="mb-8 leading-relaxed"
           initial={{ opacity: 0, translateX: -40, scale: 0.95 }}
           animate={{ opacity: 1, translateX: 0, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          transition={{ duration: 0.5, delay: 1.1 }}
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta vel
           quam quas suscipit, obcaecati illum voluptas est hic voluptatum
@@ -37,7 +37,7 @@ const Hello = () => {
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.5 }}
+          transition={{ duration: 1, delay: 1.6 }}
         >
           <div className="md:flex gap-3 md:gap-5 md:text-5xl md:justify-start hidden">
             <FaInstagram className=" hover:scale-110 transition-transform duration-300" />
@@ -56,8 +56,8 @@ const Hello = () => {
 
       <motion.div
         className="md:w-1/2 lg:max-w-lg w-3/4"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ opacity: 0, translateX: -40, scale: 0.95 }}
+        animate={{ opacity: 1, translateX: 0, scale: 1 }}
         transition={{ duration: 1, delay: 0.6 }}
       >
         <Image
