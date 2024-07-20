@@ -40,15 +40,15 @@ const Hello = () => {
           transition={{ duration: 1, delay: 0.5 }}
         >
           <div className="md:flex gap-3 md:gap-5 md:text-5xl md:justify-start hidden">
-            <FaInstagram className=" hover:scale-110 transition duration-300" />
+            <FaInstagram className=" hover:scale-110 transition-transform duration-300" />
             <Link href="https://github.com/YUTAKURE" target="_blank">
-              <FaGithub className=" hover:scale-110 transition duration-300" />
+              <FaGithub className=" hover:scale-110 transition-transform duration-300" />
             </Link>
             <Link
               href="https://www.linkedin.com/in/yuta-kurebayashi-b440352b2/"
               target="_blank"
             >
-              <FaLinkedin className=" hover:scale-110 transition duration-300" />
+              <FaLinkedin className=" hover:scale-110 transition-transform duration-300" />
             </Link>
           </div>
         </motion.span>

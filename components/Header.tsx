@@ -11,8 +11,9 @@ import {
   NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu';
 import Link from 'next/link';
-import { useTheme } from 'next-themes';
-import ThemeSwitch from '@/components/ThemeSwitch';
+// import { useTheme } from 'next-themes';
+// import ThemeSwitch from '@/components/ThemeSwitch';
+import Darkmode from './darkmode';
 
 const components: { title: string; href: string }[] = [
   {
@@ -34,9 +35,9 @@ const components: { title: string; href: string }[] = [
 ];
 
 const Header = () => {
-  const { setTheme } = useTheme();
+  // const { setTheme } = useTheme();
   return (
-    <div className="sticky top-0 z-50 px-8 py-5 bg-secondary-light dark:bg-primary-dark mb-8 flex items-center justify-between border-b">
+    <div className="sticky top-0 z-50 px-8 py-5 mb-8 flex items-center justify-between border-b dark:border-slate-500 bg-secondary-light text-primary-dark dark:bg-primary-dark dark:text-secondary-light duration-500">
       <Link href="/" className="font-medium text-lg md:text-2xl lg:text-3xl">
         YK Portfolio
       </Link>
@@ -45,25 +46,25 @@ const Header = () => {
         <nav className="hidden md:flex gap-10">
           <Link
             href="#about"
-            className="text-sm lg:text-lg hover:opacity-75 transition duration-300"
+            className="text-sm lg:text-lg hover:opacity-75 transition-opacity duration-300"
           >
             ABOUT
           </Link>
           <Link
             href="#skill"
-            className="text-sm lg:text-lg hover:opacity-75 transition duration-300"
+            className="text-sm lg:text-lg hover:opacity-75 transition-opacity duration-300"
           >
             SKILL
           </Link>
           <Link
             href="#works"
-            className="text-sm lg:text-lg hover:opacity-75 transition duration-300"
+            className="text-sm lg:text-lg hover:opacity-75 transition-opacity duration-300"
           >
             WORKS
           </Link>
           <Link
             href="#contact"
-            className="text-sm lg:text-lg hover:opacity-75 transition duration-300"
+            className="text-sm lg:text-lg hover:opacity-75 transition-opacity duration-300"
           >
             CONTACT
           </Link>
@@ -96,7 +97,8 @@ const Header = () => {
 
           {/* Dark mode */}
           <div>
-            <ThemeSwitch />
+            <Darkmode />
+            {/* <ThemeSwitch /> */}
           </div>
         </div>
       </div>

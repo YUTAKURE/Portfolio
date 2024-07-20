@@ -62,7 +62,10 @@ const Skill = () => {
       <div>
         <div className="flex gap-3 md:gap-5 text-3xl md:text-5xl mb-3 justify-center">
           {icons_1.map((Icon_1, index) => (
-            <span key={index} className="hover:scale-110 duration-300">
+            <span
+              key={index}
+              className="hover:scale-110 transition-transform duration-300"
+            >
               <TooltipProvider delayDuration={200}>
                 <Tooltip>
                   <TooltipTrigger asChild>
@@ -79,7 +82,10 @@ const Skill = () => {
 
         <div className="flex gap-3 md:gap-5 text-3xl md:text-5xl justify-center">
           {icons_2.map((Icon_2, index) => (
-            <span key={index} className="hover:scale-110 duration-300">
+            <span
+              key={index}
+              className="hover:scale-110 transition-transform duration-300"
+            >
               <TooltipProvider delayDuration={200}>
                 <Tooltip>
                   <TooltipTrigger asChild>
@@ -96,7 +102,10 @@ const Skill = () => {
 
         <div className="flex gap-3 md:gap-5 text-3xl md:text-5xl mt-14 justify-center">
           {icons_3.map((Icon_3, index) => (
-            <span key={index} className="hover:scale-110 duration-300">
+            <span
+              key={index}
+              className="hover:scale-110 transition-transform duration-300"
+            >
               <TooltipProvider delayDuration={200}>
                 <Tooltip>
                   <TooltipTrigger asChild>

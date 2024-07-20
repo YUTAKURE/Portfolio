@@ -4,34 +4,39 @@ import Skill from '@/components/Skill';
 import Works from '@/components/Works';
 import Contact from '@/components/Contact';
 import Hello from '@/components/Hello';
+import Header from '@/components/Header';
 
 export default function Home() {
   return (
-    <main className=" bg-secondary-light dark:bg-primary-dark">
-      {/* TOP */}
-      <section>
-        <Hello />
-      </section>
+    <div className="bg-secondary-light text-primary-dark dark:bg-primary-dark dark:text-secondary-light duration-500 ">
+      <Header />
 
-      {/* ABOUT */}
-      <section id="about">
-        <About />
-      </section>
+      <main>
+        {/* TOP */}
+        <section>
+          <Hello />
+        </section>
 
-      {/* SKILL */}
-      <section id="skill">
-        <Skill />
-      </section>
+        {/* ABOUT */}
+        <section id="about">
+          <About />
+        </section>
 
-      {/* WORKS */}
-      <section id="works">
-        <Works />
-      </section>
+        {/* SKILL */}
+        <section id="skill">
+          <Skill />
+        </section>
 
-      {/* CONTACT */}
-      <section id="contact">
-        <Contact />
-      </section>
-    </main>
+        {/* WORKS */}
+        <section id="works">
+          <Works />
+        </section>
+
+        {/* CONTACT */}
+        <section id="contact">
+          <Contact />
+        </section>
+      </main>
+    </div>
   );
 }
