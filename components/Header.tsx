@@ -76,11 +76,11 @@ const Header = () => {
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-secondary-light dark:bg-primary-dark">
+                  <NavigationMenuTrigger className=" text-primary-dark dark:bg-primary-dark dark:text-secondary-light transition duration-500">
                     Menu
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid w-[130px] gap-3 p-4 bg-secondary-light dark:bg-primary-dark">
+                    <ul className="grid w-[130px] gap-3 p-4  text-primary-dark dark:bg-primary-dark dark:text-secondary-light">
                       {components.map((component) => (
                         <ListItem
                           key={component.title}
