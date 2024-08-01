@@ -16,7 +16,7 @@ const Hello = () => {
         animate={{ opacity: 1, translateX: 0, scale: 1 }}
         transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.1 }}
       >
-        <h1 className="text-3xl sm:text-6xl font-medium mb-4 leading-snug sm:leading-snug">
+        <h1 className="text-3xl sm:text-5xl font-medium mb-4 leading-snug sm:leading-snug">
           Hello, <br className="hidden md:inline-block" />
           <span className=" text-transparent bg-clip-text bg-gradient-to-r  from-blue-400 via-pink-500 to-yellow-300 ">
             I&apos;m YUTA <br />
@@ -27,11 +27,12 @@ const Hello = () => {
           className="mb-8 leading-relaxed"
           initial={{ opacity: 0, translateX: -40, scale: 0.95 }}
           animate={{ opacity: 1, translateX: 0, scale: 1 }}
-          transition={{ duration: 0.5, delay: 1.1 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta vel
-          quam quas suscipit, obcaecati illum voluptas est hic voluptatum
-          dolore?
+          Motivated aspiring Front-End Developer with a strong foundation in
+          HTML/CSS, JavaScript and modern frameworks such as React, Next.js and
+          Tailwind CSS. Strong problem-solving skills and eager to learn new
+          technologies.
         </motion.p>
 
         <motion.span
@@ -58,7 +59,7 @@ const Hello = () => {
         className="md:w-1/2 lg:max-w-lg w-3/4"
         initial={{ opacity: 0, translateX: -40, scale: 0.95 }}
         animate={{ opacity: 1, translateX: 0, scale: 1 }}
-        transition={{ duration: 1, delay: 0.6 }}
+        transition={{ duration: 1, delay: 1.1 }}
       >
         <Image
           src={img1}
@@ -74,8 +75,8 @@ const Hello = () => {
 
       <motion.span
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.5 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ ease: 'easeOut', duration: 0.6, delay: 0.6 }}
       >
         <div className="md:hidden gap-5 mt-6 text-3xl flex justify-center">
           <FaInstagram className=" hover:scale-110 transition duration-300" />

@@ -50,7 +50,7 @@ const Modal = ({
     >
       <div className=" bg-slate-200 md:px-24 md:py-16 px-16 py-12 rounded-md relative">
         <button
-          className="absolute -top-9 -right-9 text-xl border-2 rounded-full px-2 py-1"
+          className="absolute -top-9 -right-9 text-xl border-2 rounded-full px-3 py-1"
           onClick={onClose}
         >
           &times;
@@ -106,7 +106,7 @@ const Contact = () => {
   return (
     <div className="w-3/4 px-15 py-24 mx-auto text-center ">
       <div className="mb-20">
-        <h1 className="text-2xl md:text-3xl font-medium pb-3 mb-5 w-15 border-b border-gray-500">
+        <h1 className="inline-block text-2xl md:text-3xl font-medium pb-3 mb-5 w-15 border-b border-gray-500">
           CONTACT
         </h1>
         <p className="w-5/6 mx-auto">Feel free to ask</p>
@@ -195,7 +195,7 @@ const Contact = () => {
             <div className="flex justify-center">
               <Button
                 type="submit"
-                className="max-w-md w-2/3 space-y-6 hover:scale-95 transition-transform duration-300 mb-40"
+                className="max-w-md w-full space-y-6 text-primary-light bg-primary-dark hover:bg-primary-dark dark:text-primary-dark dark:bg-primary-light hover:scale-95 hover:brightness-90 transition duration-300 mb-40"
               >
                 Submit
               </Button>
