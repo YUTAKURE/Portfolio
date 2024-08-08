@@ -10,24 +10,24 @@ import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa6';
 const Hello = () => {
   return (
     <div className="flex container mx-auto py-10 flex-col md:flex-row items-center justify-center">
-      <motion.div
-        className="md:w-1/2 lg:pr-12 md:pr-8 text-center md:text-left"
-        initial={{ opacity: 0, translateX: -40, scale: 0.95 }}
-        animate={{ opacity: 1, translateX: 0, scale: 1 }}
-        transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.1 }}
-      >
-        <h1 className="text-3xl sm:text-5xl font-medium mb-4 leading-snug sm:leading-snug">
+      <div className="md:w-1/2 lg:pr-12 md:pr-8 text-center md:text-left">
+        <motion.h1
+          initial={{ opacity: 0, translateX: -40, scale: 0.95 }}
+          animate={{ opacity: 1, translateX: 0, scale: 1 }}
+          transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.3 }}
+          className="text-3xl sm:text-5xl font-medium mb-4 leading-snug sm:leading-snug"
+        >
           Hello, <br className="hidden md:inline-block" />
           <span className=" text-transparent bg-clip-text bg-gradient-to-r  from-blue-400 via-pink-500 to-yellow-300 ">
             I&apos;m YUTA <br />
           </span>
           Web Developer
-        </h1>
+        </motion.h1>
         <motion.p
           className="mb-8 leading-relaxed"
           initial={{ opacity: 0, translateX: -40, scale: 0.95 }}
           animate={{ opacity: 1, translateX: 0, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
+          transition={{ duration: 0.5, delay: 0.7 }}
         >
           Motivated aspiring Front-End Developer with a strong foundation in
           HTML/CSS, JavaScript and modern frameworks such as React, Next.js and
@@ -36,9 +36,9 @@ const Hello = () => {
         </motion.p>
 
         <motion.span
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.6 }}
+          initial={{ opacity: 0, translateX: -40, scale: 0.95 }}
+          animate={{ opacity: 1, translateX: 0, scale: 1 }}
+          transition={{ duration: 0.5, delay: 1.1 }}
         >
           <div className="md:flex gap-3 md:gap-5 md:text-5xl md:justify-start hidden">
             <FaInstagram className=" hover:scale-110 transition-transform duration-300" />
@@ -53,13 +53,13 @@ const Hello = () => {
             </Link>
           </div>
         </motion.span>
-      </motion.div>
+      </div>
 
       <motion.div
         className="md:w-1/2 lg:max-w-lg w-3/4"
         initial={{ opacity: 0, translateX: -40, scale: 0.95 }}
         animate={{ opacity: 1, translateX: 0, scale: 1 }}
-        transition={{ duration: 1, delay: 1.1 }}
+        transition={{ duration: 0.5, delay: 1.1 }}
       >
         <Image
           src={img1}
@@ -74,9 +74,9 @@ const Hello = () => {
       </motion.div>
 
       <motion.span
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ ease: 'easeOut', duration: 0.6, delay: 0.6 }}
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ ease: 'easeOut', duration: 0.6, delay: 0.3 }}
       >
         <div className="md:hidden gap-5 mt-6 text-3xl flex justify-center">
           <FaInstagram className=" hover:scale-110 transition duration-300" />

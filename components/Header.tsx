@@ -12,6 +12,7 @@ import {
 } from '@/components/ui/navigation-menu';
 import Link from 'next/link';
 import Darkmode from './darkmode';
+import { motion } from 'framer-motion';
 
 const components: { title: string; href: string }[] = [
   {
@@ -34,70 +35,82 @@ const components: { title: string; href: string }[] = [
 
 const Header = () => {
   return (
-    <div className="sticky top-0 z-50 px-8 py-5 mb-8 flex items-center justify-between border-b dark:border-slate-500 bg-secondary-light text-primary-dark dark:bg-primary-dark dark:text-secondary-light duration-500">
-      <Link href="/" className="font-medium text-lg md:text-2xl lg:text-3xl">
-        YK Portfolio
-      </Link>
+    <div className="sticky top-0 z-50 px-8 py-5 mb-8  border-b dark:border-slate-500 bg-secondary-light text-primary-dark dark:bg-primary-dark dark:text-secondary-light duration-500">
+      <motion.div
+        initial={{ opacity: 0, y: -60 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          type: 'spring',
+          duration: 1.5,
+          delay: 0.2,
+          stiffness: 120,
+        }}
+        className="flex items-center justify-between"
+      >
+        <Link href="/" className="font-medium text-lg md:text-2xl lg:text-3xl">
+          YK Portfolio
+        </Link>
 
-      <div className="flex items-center gap-10">
-        <nav className="hidden md:flex gap-10">
-          <Link
-            href="#about"
-            className="text-sm lg:text-lg hover:opacity-75 transition-opacity duration-300"
-          >
-            ABOUT
-          </Link>
-          <Link
-            href="#skill"
-            className="text-sm lg:text-lg hover:opacity-75 transition-opacity duration-300"
-          >
-            SKILL
-          </Link>
-          <Link
-            href="#works"
-            className="text-sm lg:text-lg hover:opacity-75 transition-opacity duration-300"
-          >
-            WORKS
-          </Link>
-          <Link
-            href="#contact"
-            className="text-sm lg:text-lg hover:opacity-75 transition-opacity duration-300"
-          >
-            CONTACT
-          </Link>
-        </nav>
+        <div className="flex items-center gap-10">
+          <nav className="hidden md:flex gap-10">
+            <Link
+              href="#about"
+              className="text-sm lg:text-lg hover:opacity-75 transition-opacity duration-300"
+            >
+              ABOUT
+            </Link>
+            <Link
+              href="#skill"
+              className="text-sm lg:text-lg hover:opacity-75 transition-opacity duration-300"
+            >
+              SKILL
+            </Link>
+            <Link
+              href="#works"
+              className="text-sm lg:text-lg hover:opacity-75 transition-opacity duration-300"
+            >
+              WORKS
+            </Link>
+            <Link
+              href="#contact"
+              className="text-sm lg:text-lg hover:opacity-75 transition-opacity duration-300"
+            >
+              CONTACT
+            </Link>
+          </nav>
 
-        <div className="flex sm:gap-2 items-center">
-          {/* sm:Menu */}
-          <div className="md:hidden">
-            <NavigationMenu>
-              <NavigationMenuList>
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className=" text-primary-dark dark:bg-primary-dark dark:text-secondary-light transition duration-500">
-                    Menu
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-[130px] gap-3 p-4  text-primary-dark dark:bg-primary-dark dark:text-secondary-light">
-                      {components.map((component) => (
-                        <ListItem
-                          key={component.title}
-                          title={component.title}
-                          href={component.href}
-                        ></ListItem>
-                      ))}
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
-          </div>
+          <div className="flex sm:gap-2 items-center">
+            {/* sm:Menu */}
+            <div className="md:hidden">
+              <NavigationMenu>
+                <NavigationMenuList>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger className=" text-primary-dark dark:bg-primary-dark dark:text-secondary-light transition duration-500">
+                      Menu
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <ul className="grid w-[130px] gap-3 p-4  text-primary-dark dark:bg-primary-dark dark:text-secondary-light">
+                        {components.map((component) => (
+                          <ListItem
+                            key={component.title}
+                            title={component.title}
+                            href={component.href}
+                          ></ListItem>
+                        ))}
+                      </ul>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
+            </div>
 
-          {/* Dark mode */}
-          <div>
-            <Darkmode />
+            {/* Dark mode */}
+            <div>
+              <Darkmode />
+            </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

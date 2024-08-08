@@ -14,7 +14,8 @@ const About = () => {
           className="w-5/6 mx-auto text-sm"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ ease: 'easeOut', duration: 0.6, delay: 0.3 }}
+          transition={{ ease: 'easeOut', duration: 0.5, delay: 0.3 }}
+          viewport={{ once: true }}
         >
           Education and Experience
         </motion.p>
@@ -25,7 +26,8 @@ const About = () => {
           className="mt-10"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ ease: 'easeOut', duration: 0.6, delay: 1.1 }}
+          transition={{ ease: 'easeOut', duration: 0.5, delay: 0.7 }}
+          viewport={{ once: true }}
         >
           <div>
             <span className="text-xl mr-2 font-semibold">
@@ -58,7 +60,8 @@ const About = () => {
           className="mt-10"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ ease: 'easeOut', duration: 0.6, delay: 1.6 }}
+          transition={{ ease: 'easeOut', duration: 0.5, delay: 0.9 }}
+          viewport={{ once: true }}
         >
           <div className="md:-ml-28">
             <span className="text-xl mr-2 font-semibold md:-ml-1">

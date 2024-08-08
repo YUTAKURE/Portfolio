@@ -46,7 +46,8 @@ const Modal = ({
       className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.5 }}
+      transition={{ ease: 'easeOut', duration: 0.5, delay: 0.3 }}
+      viewport={{ once: true }}
     >
       <div className=" bg-slate-200 md:px-24 md:py-16 px-16 py-12 rounded-md relative">
         <button
@@ -109,14 +110,23 @@ const Contact = () => {
         <h1 className="inline-block text-2xl md:text-3xl font-medium pb-3 mb-5 w-15 border-b border-gray-500">
           CONTACT
         </h1>
-        <p className="w-5/6 mx-auto">Feel free to ask</p>
+        <motion.p
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ ease: 'easeOut', duration: 0.5, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="w-5/6 mx-auto"
+        >
+          Feel free to ask
+        </motion.p>
       </div>
 
       <motion.div
         className="w-3/4 mx-auto text-start"
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ ease: 'easeOut', duration: 0.6, delay: 0.5 }}
+        transition={{ ease: 'easeOut', duration: 0.5, delay: 0.6 }}
+        viewport={{ once: true }}
       >
         <Form {...form}>
           <form
@@ -195,7 +205,7 @@ const Contact = () => {
             <div className="flex justify-center">
               <Button
                 type="submit"
-                className="max-w-md w-full space-y-6 text-primary-light bg-primary-dark hover:bg-primary-dark dark:text-primary-dark dark:bg-primary-light hover:scale-95 hover:brightness-90 transition duration-300 mb-40"
+                className="max-w-md w-full space-y-6 text-primary-light bg-primary-dark hover:bg-primary-dark dark:text-primary-dark dark:bg-primary-light hover:scale-95 hover:brightness-90 transition duration-300 mb-16"
               >
                 Submit
               </Button>

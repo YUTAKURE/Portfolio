@@ -19,6 +19,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={notosansjp.className}>
         <div className="">{children}</div>
+
+        <footer className="pb-5 bg-secondary-light dark:bg-primary-dark duration-500">
+          <div className="text-center text-xs text-gray-400">
+            Copyright © All rights reserved | YUTA KUREBAYASHI
+          </div>
+        </footer>
       </body>
     </html>
   );

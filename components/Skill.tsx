@@ -61,7 +61,8 @@ const Skill = () => {
           className="w-5/6 mx-auto text-sm"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ ease: 'easeOut', duration: 0.6, delay: 0.3 }}
+          transition={{ ease: 'easeOut', duration: 0.5, delay: 0.3 }}
+          viewport={{ once: true }}
         >
           Programming languages,
           <span className="block md:hidden mt-1"></span> Developer tools and
@@ -74,7 +75,8 @@ const Skill = () => {
           className="flex gap-3 md:gap-5 text-3xl md:text-5xl mb-3 justify-center"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ ease: 'easeOut', duration: 0.6, delay: 1.1 }}
+          transition={{ ease: 'easeOut', duration: 0.5, delay: 0.7 }}
+          viewport={{ once: true }}
         >
           {icons_1.map((Icon_1, index) => (
             <span
@@ -99,7 +101,8 @@ const Skill = () => {
           className="flex gap-3 md:gap-5 text-3xl md:text-5xl justify-center"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ ease: 'easeOut', duration: 0.6, delay: 1.6 }}
+          transition={{ ease: 'easeOut', duration: 0.5, delay: 0.9 }}
+          viewport={{ once: true }}
         >
           {icons_2.map((Icon_2, index) => (
             <span
@@ -124,7 +127,8 @@ const Skill = () => {
           className="flex gap-3 md:gap-5 text-3xl md:text-5xl mt-14 justify-center"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ ease: 'easeOut', duration: 0.6, delay: 2.1 }}
+          transition={{ ease: 'easeOut', duration: 0.5, delay: 1.1 }}
+          viewport={{ once: true }}
         >
           {icons_3.map((Icon_3, index) => (
             <span

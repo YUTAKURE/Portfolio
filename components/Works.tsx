@@ -31,7 +31,8 @@ const Works = () => {
           className="w-5/6 mx-auto text-sm mb-20"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ ease: 'easeOut', duration: 0.6, delay: 0.6 }}
+          transition={{ ease: 'easeOut', duration: 0.5, delay: 0.3 }}
+          viewport={{ once: true }}
         >
           Project and Background
         </motion.p>
@@ -44,7 +45,8 @@ const Works = () => {
           className="mb-20 w-2/3 max-w-lg mx-auto"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ ease: 'easeOut', duration: 0.6, delay: 1.1 }}
+          transition={{ ease: 'easeOut', duration: 0.5, delay: 0.7 }}
+          viewport={{ once: true }}
         >
           <div className="overflow-hidden bg-white rounded shadow-md text-slate-500 shadow-slate-200">
             <figure>
@@ -92,7 +94,8 @@ const Works = () => {
           className="mb-20 flex justify-center"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ ease: 'easeOut', duration: 0.6, delay: 0.6 }}
+          transition={{ ease: 'easeOut', duration: 0.5, delay: 1.1 }}
+          viewport={{ once: true }}
         >
           <Slider />
         </motion.div>
@@ -101,7 +104,8 @@ const Works = () => {
           className="md:flex md:justify-center md:gap-10"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ ease: 'easeOut', duration: 0.6, delay: 1.1 }}
+          transition={{ ease: 'easeOut', duration: 0.5, delay: 0.7 }}
+          viewport={{ once: true }}
         >
           <div className="mb-10">
             <DynamicVideoPlayer
