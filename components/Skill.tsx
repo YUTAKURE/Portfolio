@@ -71,45 +71,43 @@ const Skill = () => {
       </div>
 
       <div>
-        <motion.div
-          className="flex gap-3 md:gap-5 text-3xl md:text-5xl mb-3 justify-center"
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ ease: 'easeOut', duration: 0.5, delay: 0.7 }}
-          viewport={{ once: true }}
-        >
-          {icons_1.map((Icon_1, index) => (
-            <span
-              key={index}
-              className="hover:scale-110 transition-transform duration-300"
-            >
-              <TooltipProvider delayDuration={200}>
+        <TooltipProvider delayDuration={200}>
+          <motion.div
+            className="flex gap-3 md:gap-5 text-3xl md:text-5xl mb-3 justify-center"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ ease: 'easeOut', duration: 0.5, delay: 0.7 }}
+            viewport={{ once: true }}
+          >
+            {icons_1.map((Icon_1, index) => (
+              <span
+                key={index}
+                className="hover:scale-110 transition-transform duration-300"
+              >
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Icon_1.iconComp />
                   </TooltipTrigger>
-                  <TooltipContent>
+                  <TooltipContent side="top">
                     <p>{Icon_1.iconName}</p>
                   </TooltipContent>
                 </Tooltip>
-              </TooltipProvider>
-            </span>
-          ))}
-        </motion.div>
+              </span>
+            ))}
+          </motion.div>
 
-        <motion.div
-          className="flex gap-3 md:gap-5 text-3xl md:text-5xl justify-center"
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ ease: 'easeOut', duration: 0.5, delay: 0.9 }}
-          viewport={{ once: true }}
-        >
-          {icons_2.map((Icon_2, index) => (
-            <span
-              key={index}
-              className="hover:scale-110 transition-transform duration-300"
-            >
-              <TooltipProvider delayDuration={200}>
+          <motion.div
+            className="flex gap-3 md:gap-5 text-3xl md:text-5xl justify-center"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ ease: 'easeOut', duration: 0.5, delay: 0.9 }}
+            viewport={{ once: true }}
+          >
+            {icons_2.map((Icon_2, index) => (
+              <span
+                key={index}
+                className="hover:scale-110 transition-transform duration-300"
+              >
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Icon_2.iconComp />
@@ -118,24 +116,22 @@ const Skill = () => {
                     <p>{Icon_2.iconName}</p>
                   </TooltipContent>
                 </Tooltip>
-              </TooltipProvider>
-            </span>
-          ))}
-        </motion.div>
+              </span>
+            ))}
+          </motion.div>
 
-        <motion.div
-          className="flex gap-3 md:gap-5 text-3xl md:text-5xl mt-14 justify-center"
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ ease: 'easeOut', duration: 0.5, delay: 1.1 }}
-          viewport={{ once: true }}
-        >
-          {icons_3.map((Icon_3, index) => (
-            <span
-              key={index}
-              className="hover:scale-110 transition-transform duration-300"
-            >
-              <TooltipProvider delayDuration={200}>
+          <motion.div
+            className="flex gap-3 md:gap-5 text-3xl md:text-5xl mt-14 justify-center"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ ease: 'easeOut', duration: 0.5, delay: 1.1 }}
+            viewport={{ once: true }}
+          >
+            {icons_3.map((Icon_3, index) => (
+              <span
+                key={index}
+                className="hover:scale-110 transition-transform duration-300"
+              >
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Icon_3.iconComp />
@@ -144,10 +140,10 @@ const Skill = () => {
                     <p>{Icon_3.iconName}</p>
                   </TooltipContent>
                 </Tooltip>
-              </TooltipProvider>
-            </span>
-          ))}
-        </motion.div>
+              </span>
+            ))}
+          </motion.div>
+        </TooltipProvider>
       </div>
     </div>
   );

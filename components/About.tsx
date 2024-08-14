@@ -65,7 +65,7 @@ const About = () => {
         >
           <div className="md:-ml-28">
             <span className="text-xl mr-2 font-semibold md:-ml-1">
-              Co., Ltd. IF BOX
+              Co., Ltd. DD　　
             </span>
             <span className="block md:hidden mt-1"></span>
             <span className="md:ml-14 text-slate-400">Japanese Idol Group</span>

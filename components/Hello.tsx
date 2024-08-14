@@ -5,7 +5,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import img1 from '../public/images/yuta.jpg';
 import { motion } from 'framer-motion';
-import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa6';
+import { FaGithub, FaLinkedin } from 'react-icons/fa6';
+import { GrDocumentPdf } from 'react-icons/gr';
 
 const Hello = () => {
   return (
@@ -41,7 +42,9 @@ const Hello = () => {
           transition={{ duration: 0.5, delay: 1.1 }}
         >
           <div className="md:flex gap-3 md:gap-5 md:text-5xl md:justify-start hidden">
-            <FaInstagram className=" hover:scale-110 transition-transform duration-300" />
+            <Link href="/resume" target="_blank">
+              <GrDocumentPdf className=" hover:scale-110 transition-transform duration-300" />
+            </Link>
             <Link href="https://github.com/YUTAKURE" target="_blank">
               <FaGithub className=" hover:scale-110 transition-transform duration-300" />
             </Link>
@@ -79,7 +82,9 @@ const Hello = () => {
         transition={{ ease: 'easeOut', duration: 0.6, delay: 0.3 }}
       >
         <div className="md:hidden gap-5 mt-6 text-3xl flex justify-center">
-          <FaInstagram className=" hover:scale-110 transition duration-300" />
+          <Link href="/resume" target="_blank">
+            <GrDocumentPdf className=" hover:scale-110 transition-transform duration-300" />
+          </Link>
           <Link href="https://github.com/YUTAKURE" target="_blank">
             <FaGithub className=" hover:scale-110 transition duration-300" />
           </Link>

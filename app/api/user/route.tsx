@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
 //https://zenn.dev/nenenemo/articles/59ca1b03fcf234
+//https://qiita.com/kad/items/365f292b6d78fa161fef
 
 // export const POST = async (req: NextApiRequest, res: NextApiResponse) => {
 export const POST = async (req: NextRequest, res: NextResponse) => {
