@@ -80,7 +80,7 @@ const Skill = () => {
             viewport={{ once: true }}
           >
             {icons_1.map((Icon_1, index) => (
-              <span
+              <div
                 key={index}
                 className="hover:scale-110 transition-transform duration-300"
               >
@@ -88,11 +88,11 @@ const Skill = () => {
                   <TooltipTrigger asChild>
                     <Icon_1.iconComp />
                   </TooltipTrigger>
-                  <TooltipContent side="top">
+                  <TooltipContent>
                     <p>{Icon_1.iconName}</p>
                   </TooltipContent>
                 </Tooltip>
-              </span>
+              </div>
             ))}
           </motion.div>
 
@@ -112,7 +112,7 @@ const Skill = () => {
                   <TooltipTrigger asChild>
                     <Icon_2.iconComp />
                   </TooltipTrigger>
-                  <TooltipContent side="bottom">
+                  <TooltipContent side="bottom" sideOffset={10}>
                     <p>{Icon_2.iconName}</p>
                   </TooltipContent>
                 </Tooltip>

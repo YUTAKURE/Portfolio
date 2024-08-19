@@ -2,6 +2,13 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 
 const About = () => {
   return (
@@ -63,16 +70,34 @@ const About = () => {
           transition={{ ease: 'easeOut', duration: 0.5, delay: 0.9 }}
           viewport={{ once: true }}
         >
-          <div className="md:-ml-28">
-            <span className="text-xl mr-2 font-semibold md:-ml-1">
-              Co., Ltd. DD　　
-            </span>
-            <span className="block md:hidden mt-1"></span>
-            <span className="md:ml-14 text-slate-400">Japanese Idol Group</span>
-          </div>
-          <p className="mb-5 md:translate-x-8 text-slate-400">
-            in Tokyo, Japan
-          </p>
+          <TooltipProvider delayDuration={200}>
+            <Tooltip>
+              <div className="md:-ml-28">
+                <span className="text-xl mr-2 font-semibold md:-ml-1">
+                  Co., Ltd. DD　　
+                </span>
+                <span className="block md:hidden mt-1"></span>
+                <TooltipTrigger asChild>
+                  <span className="md:ml-14 text-slate-400 cursor-pointer">
+                    Japanese Idol Group
+                  </span>
+                </TooltipTrigger>
+              </div>
+              <div>
+                <p className="mb-5 md:translate-x-8 text-slate-400">
+                  in Tokyo, Japan
+                </p>
+              </div>
+              <TooltipContent sideOffset={20}>
+                <p className="text-xs">
+                  <Link href="/background" target="_blank" className="w-full">
+                    Please check this LINK if you’re interested in my previous
+                    job as an idol.
+                  </Link>
+                </p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
 
           <div className="md:-ml-20">
             <span className="text-xl mr-2 font-semibold md:-ml-14">

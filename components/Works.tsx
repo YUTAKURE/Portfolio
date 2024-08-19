@@ -1,26 +1,11 @@
 'use client';
 
 import React from 'react';
-import dynamic from 'next/dynamic';
-import Slider from './Slider';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card';
 
 const Works = () => {
-  const DynamicVideoPlayer = dynamic(
-    () => import('../components/VideoPlayer'),
-    { ssr: false },
-  );
-
   return (
     <div className="w-3/4 px-15 py-24 mx-auto text-center">
       <div className="mb-20">
@@ -34,7 +19,7 @@ const Works = () => {
           transition={{ ease: 'easeOut', duration: 0.5, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          Project and Background
+          Project
         </motion.p>
 
         {/* <div className="">
@@ -87,39 +72,6 @@ const Works = () => {
                 </Link>
               </button>
             </div>
-          </div>
-        </motion.div>
-
-        <motion.div
-          className="mb-20 flex justify-center"
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ ease: 'easeOut', duration: 0.5, delay: 1.1 }}
-          viewport={{ once: true }}
-        >
-          <Slider />
-        </motion.div>
-
-        <motion.div
-          className="md:flex md:justify-center md:gap-10"
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ ease: 'easeOut', duration: 0.5, delay: 0.7 }}
-          viewport={{ once: true }}
-        >
-          <div className="mb-10">
-            <DynamicVideoPlayer
-              key="videoB"
-              src="/videos/Yuta_videoB.mp4"
-              type="video/mp4"
-            />
-          </div>
-          <div>
-            <DynamicVideoPlayer
-              key="videoA"
-              src="/videos/Yuta_videoA.mp4"
-              type="video/mp4"
-            />
           </div>
         </motion.div>
       </div>

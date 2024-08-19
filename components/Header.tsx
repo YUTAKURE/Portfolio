@@ -54,25 +54,25 @@ const Header = () => {
         <div className="flex items-center gap-10">
           <nav className="hidden md:flex gap-10">
             <Link
-              href="#about"
+              href="/#about"
               className="text-sm lg:text-lg hover:opacity-75 transition-opacity duration-300"
             >
               ABOUT
             </Link>
             <Link
-              href="#skill"
+              href="/#skill"
               className="text-sm lg:text-lg hover:opacity-75 transition-opacity duration-300"
             >
               SKILL
             </Link>
             <Link
-              href="#works"
+              href="/#works"
               className="text-sm lg:text-lg hover:opacity-75 transition-opacity duration-300"
             >
               WORKS
             </Link>
             <Link
-              href="#contact"
+              href="/#contact"
               className="text-sm lg:text-lg hover:opacity-75 transition-opacity duration-300"
             >
               CONTACT
