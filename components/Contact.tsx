@@ -168,7 +168,7 @@ const Contact = () => {
                     <Input
                       placeholder="E-mail"
                       {...field}
-                      className="duration-500 "
+                      className="duration-500"
                     />
                   </FormControl>
                   {/* <FormDescription>
