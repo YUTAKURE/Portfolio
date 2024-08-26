@@ -96,21 +96,28 @@ const About = () => {
           <div className="w-4/5 m-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-4 md:grid-rows-2 md:gap-7 md:text-start">
               <div className="md:text-end md:pr-3">
-                <p className="md:text-xl text-lg font-semibold">Co., Ltd. DD</p>
+                <span className="md:text-xl text-lg font-semibold">
+                  Network Engineer
+                </span>
               </div>
-              <TooltipProvider delayDuration={200}>
+              <div className="md:mt-0 -mt-4 md:text-base text-sm">
+                <p className="md:ml-2 text-slate-600 dark:text-slate-400">
+                  Logic factory Co.,Ltd.
+                </p>
+                <p className="md:ml-2 text-slate-600 dark:text-slate-400">
+                  in Tokyo, Japan
+                </p>
+              </div>
+              <TooltipProvider delayDuration={500}>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <div className="md:mt-0 -mt-5 md:text-base text-sm">
-                      <p className="md:ml-2 text-slate-600 dark:text-slate-400">
+                    <div className="md:mt-0 mt-5 md:text-end md:pr-3">
+                      <p className="md:text-xl text-lg font-semibold">
                         Japanese Idol Group
-                      </p>
-                      <p className="md:ml-2 text-slate-600 dark:text-slate-400">
-                        in Tokyo, Japan
                       </p>
                     </div>
                   </TooltipTrigger>
-                  <TooltipContent sideOffset={20}>
+                  <TooltipContent sideOffset={7}>
                     <p className="text-xs">
                       <Link
                         href="/background"
@@ -124,14 +131,10 @@ const About = () => {
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
-              <div className="md:mt-0 mt-5 md:text-end md:pr-3">
-                <span className="md:text-xl text-lg font-semibold">
-                  Logic factory Co.,Ltd.
-                </span>
-              </div>
+
               <div className="md:mt-0 mt-1 md:text-base text-sm">
                 <p className="md:ml-2 text-slate-600 dark:text-slate-400">
-                  Network Engineer
+                  Co., Ltd. DD
                 </p>
                 <p className="md:ml-2 text-slate-600 dark:text-slate-400">
                   in Tokyo, Japan
