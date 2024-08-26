@@ -28,107 +28,115 @@ const About = () => {
         </motion.p>
       </div>
 
-      <div>
-        <motion.div
-          className="mt-10"
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ ease: 'easeOut', duration: 0.5, delay: 0.7 }}
-          viewport={{ once: true }}
-        >
-          <fieldset className="inline-block opacity-60 border border-solid border-gray-400 rounded-lg px-16 py-2">
-            <legend className="mb-8 text-sm">
-              <span className="mx-4">Education</span>
-            </legend>
-            <div>
-              <span className="text-xl mr-2 font-semibold">
-                Greystone College
-              </span>
-              <span className="block md:hidden mt-1"></span>
-              <span className="md:ml-8 text-slate-400">
-                Front End Development with CO-OP
-              </span>
-            </div>
-            <p className="mb-5 md:translate-x-14 text-slate-400">
-              in Vancouver, Canada
-            </p>
+      <motion.div
+        className="mt-10"
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ ease: 'easeOut', duration: 0.5, delay: 0.9 }}
+        viewport={{ once: true }}
+      >
+        <fieldset className="max-w-2xl m-auto opacity-60 border border-solid border-gray-400 rounded-lg pb-12 md:pb-16 ">
+          <legend className="md:mb-16 mb-9 text-sm">
+            <span className="mx-4">Education</span>
+          </legend>
 
-            <div>
-              <span className=" text-xl mr-2 font-semibold md:ml-3">
-                Hosei University
-              </span>
-              <span className="block md:hidden mt-1"></span>
-              <span className="md:ml-14 text-slate-400">
-                Information and Electrical Engineering
-              </span>
+          <div className="w-11/12 m-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-4 md:grid-rows-2 md:gap-7 md:text-start">
+              <div className="md:text-end md:pr-3">
+                <span className="text-xl font-semibold">Greystone College</span>
+              </div>
+              <div className="md:mt-0 -mt-4">
+                <p className="md:ml-2 text-slate-600 dark:text-slate-400 md:block inline">
+                  Front End Development
+                </p>
+                <span> </span>
+                <p className="md:ml-2 text-slate-600 dark:text-slate-400 md:block inline">
+                  with CO-OP
+                </p>
+                <p className="md:ml-2 text-slate-600 dark:text-slate-400">
+                  in Vancouver, Canada
+                </p>
+              </div>
+              <div className="md:mt-0 mt-5 md:text-end md:pr-3">
+                <span className="text-xl font-semibold">Hosei University</span>
+              </div>
+              <div className="md:mt-0 mt-1">
+                <p className="md:ml-2 text-slate-600 dark:text-slate-400 md:block inline">
+                  Information and
+                </p>
+                <span> </span>
+                <p className="md:ml-2 text-slate-600 dark:text-slate-400 md:block inline">
+                  Electrical Engineering
+                </p>
+                <p className="md:ml-2 text-slate-600 dark:text-slate-400">
+                  in Tokyo, Japan
+                </p>
+              </div>
             </div>
-            <p className="mb-10 md:translate-x-8 text-slate-400">
-              in Tokyo, Japan
-            </p>
-          </fieldset>
-        </motion.div>
+          </div>
+        </fieldset>
+      </motion.div>
 
-        <motion.div
-          className="mt-10"
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ ease: 'easeOut', duration: 0.5, delay: 0.9 }}
-          viewport={{ once: true }}
-        >
-          <fieldset className="md:w-[630px] sm:w-[404px] w-7/8 mx-auto opacity-60 border border-solid border-gray-400 rounded-lg py-2">
-            <legend className="mb-8 text-sm">
-              <span className="mx-4">Experience</span>
-            </legend>
-            <TooltipProvider delayDuration={200}>
-              <Tooltip>
-                <div className="md:-ml-28">
-                  <span className="text-xl mr-2 font-semibold md:-ml-1">
-                    Co., Ltd. DD　　
-                  </span>
-                  <span className="block md:hidden mt-1"></span>
+      <motion.div
+        className="mt-10"
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ ease: 'easeOut', duration: 0.5, delay: 0.9 }}
+        viewport={{ once: true }}
+      >
+        <fieldset className="max-w-2xl m-auto opacity-60 border border-solid border-gray-400 rounded-lg pb-12 md:pb-16 ">
+          <legend className="md:mb-14 mb-9 text-sm">
+            <span className="mx-4">Experience</span>
+          </legend>
+
+          <div className="w-4/5 m-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-4 md:grid-rows-2 md:gap-7 md:text-start">
+              <div className="md:text-end md:pr-3">
+                <p className="text-xl font-semibold">Co., Ltd. DD</p>
+              </div>
+              <TooltipProvider delayDuration={200}>
+                <Tooltip>
                   <TooltipTrigger asChild>
-                    <span className="md:ml-14 text-slate-400 cursor-pointer">
-                      Japanese Idol Group
-                    </span>
+                    <div className="md:mt-0 -mt-5">
+                      <p className="md:ml-2 text-slate-600 dark:text-slate-400">
+                        Japanese Idol Group
+                      </p>
+                      <p className="md:ml-2 text-slate-600 dark:text-slate-400">
+                        in Tokyo, Japan
+                      </p>
+                    </div>
                   </TooltipTrigger>
-                </div>
-                <div>
-                  <p className="mb-5 md:translate-x-8 text-slate-400">
-                    in Tokyo, Japan
-                  </p>
-                </div>
-                <TooltipContent sideOffset={20}>
-                  <p className="text-xs">
-                    <Link href="/background" target="_blank" className="w-full">
-                      Please check this LINK if you’re interested in my previous
-                      job as an idol.
-                    </Link>
-                  </p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
-
-            <div className="md:-ml-20">
-              <span className="text-xl mr-2 font-semibold md:-ml-14">
-                Logic factory Co.,Ltd.
-              </span>
-              <span className="block md:hidden mt-1"></span>
-              <span className="md:ml-2 text-slate-400">Network Engineer</span>
+                  <TooltipContent sideOffset={20}>
+                    <p className="text-xs">
+                      <Link
+                        href="/background"
+                        target="_blank"
+                        className="w-full"
+                      >
+                        Please check this LINK if you’re interested in my
+                        previous job as an idol.
+                      </Link>
+                    </p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+              <div className="md:mt-0 mt-5 md:text-end md:pr-3">
+                <span className="text-xl font-semibold">
+                  Logic factory Co.,Ltd.
+                </span>
+              </div>
+              <div className="md:mt-0 mt-1">
+                <p className="md:ml-2 text-slate-600 dark:text-slate-400">
+                  Network Engineer
+                </p>
+                <p className="md:ml-2 text-slate-600 dark:text-slate-400">
+                  in Tokyo, Japan
+                </p>
+              </div>
             </div>
-            <p className="mb-10 md:translate-x-8 text-slate-400">
-              in Tokyo, Japan
-            </p>
-          </fieldset>
-        </motion.div>
-
-        {/* <div>
-          <h3>Co., Ltd. IF BOX | Actor</h3>
-          <p className="mb-5">in Tokyo, Japan | 03/2014 - 12/2023</p>
-
-          <h3>Logic factory Co.,Ltd. / Network Engineer</h3>
-          <p className="mb-5">in Tokyo, Japan | 02/2012 - 02/2014</p>
-        </div> */}
-      </div>
+          </div>
+        </fieldset>
+      </motion.div>
     </div>
   );
 };
