@@ -21,7 +21,7 @@ export default function RootLayout({
         <div className="">{children}</div>
 
         <footer className="pb-5 bg-secondary-light dark:bg-primary-dark duration-500">
-          <div className="text-center text-xs text-gray-400">
+          <div className="text-center text-xs text-gray-400 translate-y-2">
             Copyright © All rights reserved | YUTA KUREBAYASHI
           </div>
         </footer>

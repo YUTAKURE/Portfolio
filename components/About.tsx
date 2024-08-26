@@ -75,7 +75,7 @@ const About = () => {
           transition={{ ease: 'easeOut', duration: 0.5, delay: 0.9 }}
           viewport={{ once: true }}
         >
-          <fieldset className="md:w-[630px] w-[404px] mx-auto opacity-60 border border-solid border-gray-400 rounded-lg py-2">
+          <fieldset className="md:w-[630px] sm:w-[404px] w-7/8 mx-auto opacity-60 border border-solid border-gray-400 rounded-lg py-2">
             <legend className="mb-8 text-sm">
               <span className="mx-4">Experience</span>
             </legend>

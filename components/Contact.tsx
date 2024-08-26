@@ -106,7 +106,7 @@ const Contact = () => {
 
   return (
     <div className="w-3/4 px-15 py-24 mx-auto text-center ">
-      <div className="mb-20">
+      <div className="md:mb-16 mb-10">
         <h1 className="inline-block text-2xl md:text-3xl font-medium pb-3 mb-5 w-15 border-b border-gray-500">
           CONTACT
         </h1>

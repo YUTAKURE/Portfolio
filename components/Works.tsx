@@ -13,7 +13,7 @@ const Works = () => {
           WORKS
         </h1>
         <motion.p
-          className="w-5/6 mx-auto text-sm mb-20"
+          className="w-5/6 mx-auto text-sm md:mb-16 mb-10"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ ease: 'easeOut', duration: 0.5, delay: 0.3 }}

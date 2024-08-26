@@ -25,7 +25,7 @@ const Hello = () => {
           Web Developer
         </motion.h1>
         <motion.p
-          className="mb-8 leading-relaxed"
+          className="mb-8 leading-relaxed md:text-base text-sm"
           initial={{ opacity: 0, translateX: -40, scale: 0.95 }}
           animate={{ opacity: 1, translateX: 0, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.7 }}
