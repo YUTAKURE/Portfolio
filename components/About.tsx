@@ -43,9 +43,11 @@ const About = () => {
           <div className="w-11/12 m-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-4 md:grid-rows-2 md:gap-7 md:text-start">
               <div className="md:text-end md:pr-3">
-                <span className="text-xl font-semibold">Greystone College</span>
+                <span className="md:text-xl text-lg font-semibold">
+                  Greystone College
+                </span>
               </div>
-              <div className="md:mt-0 -mt-4">
+              <div className="md:mt-0 -mt-4 md:text-base text-sm">
                 <p className="md:ml-2 text-slate-600 dark:text-slate-400 md:block inline">
                   Front End Development
                 </p>
@@ -58,9 +60,11 @@ const About = () => {
                 </p>
               </div>
               <div className="md:mt-0 mt-5 md:text-end md:pr-3">
-                <span className="text-xl font-semibold">Hosei University</span>
+                <span className="md:text-xl text-lg font-semibold">
+                  Hosei University
+                </span>
               </div>
-              <div className="md:mt-0 mt-1">
+              <div className="md:mt-0 mt-1 md:text-base text-sm">
                 <p className="md:ml-2 text-slate-600 dark:text-slate-400 md:block inline">
                   Information and
                 </p>
@@ -92,12 +96,12 @@ const About = () => {
           <div className="w-4/5 m-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-4 md:grid-rows-2 md:gap-7 md:text-start">
               <div className="md:text-end md:pr-3">
-                <p className="text-xl font-semibold">Co., Ltd. DD</p>
+                <p className="md:text-xl text-lg font-semibold">Co., Ltd. DD</p>
               </div>
               <TooltipProvider delayDuration={200}>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <div className="md:mt-0 -mt-5">
+                    <div className="md:mt-0 -mt-5 md:text-base text-sm">
                       <p className="md:ml-2 text-slate-600 dark:text-slate-400">
                         Japanese Idol Group
                       </p>
@@ -121,11 +125,11 @@ const About = () => {
                 </Tooltip>
               </TooltipProvider>
               <div className="md:mt-0 mt-5 md:text-end md:pr-3">
-                <span className="text-xl font-semibold">
+                <span className="md:text-xl text-lg font-semibold">
                   Logic factory Co.,Ltd.
                 </span>
               </div>
-              <div className="md:mt-0 mt-1">
+              <div className="md:mt-0 mt-1 md:text-base text-sm">
                 <p className="md:ml-2 text-slate-600 dark:text-slate-400">
                   Network Engineer
                 </p>
