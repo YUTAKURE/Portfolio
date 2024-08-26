@@ -13,7 +13,7 @@ const BackGround = () => {
   );
 
   return (
-    <div className="w-3/4 m-auto">
+    <div className="w-3/4 m-auto md:pb-[37rem] pb-48">
       <motion.div
         className="mb-20 flex justify-center"
         initial={{ opacity: 0, scale: 0.9 }}
