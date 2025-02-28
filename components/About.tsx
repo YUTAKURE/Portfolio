@@ -108,7 +108,7 @@ const About = () => {
                   in Tokyo, Japan
                 </p>
               </div>
-              <TooltipProvider delayDuration={500}>
+              {/* <TooltipProvider delayDuration={500}>
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <div className="md:mt-0 mt-5 md:text-end md:pr-3">
@@ -130,16 +130,16 @@ const About = () => {
                     </p>
                   </TooltipContent>
                 </Tooltip>
-              </TooltipProvider>
+              </TooltipProvider> */}
 
-              <div className="md:mt-0 mt-1 md:text-base text-sm">
+              {/* <div className="md:mt-0 mt-1 md:text-base text-sm">
                 <p className="md:ml-2 text-slate-600 dark:text-slate-400">
                   Co., Ltd. DD
                 </p>
                 <p className="md:ml-2 text-slate-600 dark:text-slate-400">
                   in Tokyo, Japan
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </fieldset>

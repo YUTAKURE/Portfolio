@@ -58,7 +58,7 @@ const Hello = () => {
         </motion.span>
       </div>
 
-      <motion.div
+      {/* <motion.div
         className="md:w-1/2 lg:max-w-lg w-3/4"
         initial={{ opacity: 0, translateX: -40, scale: 0.95 }}
         animate={{ opacity: 1, translateX: 0, scale: 1 }}
@@ -74,7 +74,7 @@ const Hello = () => {
           }}
           placeholder="blur"
         />
-      </motion.div>
+      </motion.div> */}
 
       <motion.span
         initial={{ opacity: 0, scale: 0.95 }}
