@@ -3,6 +3,7 @@ import { Noto_Sans_JP } from 'next/font/google';
 import './globals.css';
 import Script from 'next/script';
 // import Header from '@/components/Header';
+import { GoogleTagManager } from '@next/third-parties/google';
 
 const notosansjp = Noto_Sans_JP({ subsets: ['latin'] });
 
@@ -21,6 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <GoogleTagManager gtmId="GTM-NWWG26K9" />
+
         {/* <!-- Google tag (gtag.js) --> */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
